@@ -19,22 +19,14 @@ package management for Python
   - [Ruff / charliermarsh.ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)
 
 以下のinstall方法は更新されている可能性があるので，公式サイトをご確認ください
-### Linux
+### Linux・macOS
 ```
 curl -sSf https://rye.astral.sh/get | bash
 ```
-
-
-### macOS
-```
-curl -sSf https://rye.astral.sh/get | bash
-```
-または
+macOSの場合以下でも可
 ```
 brew install rye
 ```
-
-### 共通
 install後，PATHを通す
 ```
 echo 'source "$HOME/.rye/env"' >> ~/.profile
