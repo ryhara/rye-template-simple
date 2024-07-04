@@ -6,6 +6,12 @@ package management for Python
 - シェルスクリプト１つで初期設定が完了します．
 - Linter・FormatterにRuffを採用しています．
 
+> [!NOTE]
+> 本テンプレートは新規プロジェクトの初期化向けのテンプレートとなっています．
+>
+> プロジェクトの途中からryeを使用する際のスクリプトの使用は推奨していませんが，手順は参考になると思います．
+
+
 ## Requirement
 - ryeがinstallされていること
   - [Rye公式](https://rye.astral.sh/)
@@ -47,7 +53,7 @@ source ~/.bashrc
 ## Usage
 > [!CAUTION]
 > 空のディレクトリで行うことを推奨します．
-> 
+>
 > シェルスクリプト内に現在のディレクトリの`src/`以下をすべて消す操作が含まれているので注意してください．
 
 背景：[Features](https://github.com/ryhara/rye-template-simple?tab=readme-ov-file#features)をご確認ください
