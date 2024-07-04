@@ -88,6 +88,8 @@ rye sync
 
 ### add
 パッケージの追加(pip install)
+
+pip installの代わりに`rye add`でパッケージを追加していくのが基本的な使い方です．`rye sync`も忘れずに
 ```
 rye add パッケージ名
 ```
