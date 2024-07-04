@@ -68,14 +68,14 @@ echo "Makefile created successfully!"
 make init
 
 # .vscode/settings.json -------------------------------------------
-content=$(cat << EOM
+content=$(cat << EOF
 {
     "[python]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "charliermarsh.ruff"
     }
 }
-EOM
+EOF
 )
 
 mkdir -p .vscode
