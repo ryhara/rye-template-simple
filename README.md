@@ -64,6 +64,19 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
+**Option:** requirements.txtからパッケージをまとめて追加したい場合
+
+requirements.shファイルを作成し，本リポジトリ内のrequirements.shの内容を貼り付け，パーミッションを与える．
+```
+touch requirements.sh
+chmod +x requirements.sh
+```
+
+引数にrequirements.txtのパスを指定して，実行．（引数を渡さない場合./requirements.txtになる）
+```
+./requirements.sh ./requirements.txt
+```
+
 ## Command
 ryeでよく使うコマンドについて解説
 
