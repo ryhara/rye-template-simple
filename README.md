@@ -158,15 +158,12 @@ setup.pyで行っていることの解説
   - この際最初に存在する`src/`以下のファイルを全削除
   - buildのターゲットディレクトリをそれにあわせて変更
   - 実際にbuildは行ったこと無い（行うこともおそらく無い）のでbuild時の挙動は未確認
-- `rye run 〇〇`ではなく，Makefileを用いて`make 〇〇`で実行できるように**Makefile**を作成
-- `make init`を実行し，必要最低限のパッケージを追加
+- `rye add --dev ruff`, `rye add pip`, `rye sync`で必要最低限のパッケージを追加
 - `.vscode/setting.json`を作成し，保存時にformatをかける設定を追加
   - VSCodeのRuffの拡張機能を追加しておく
   - [Ruff / charliermarsh.ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)
 - `.gitignore`にpythonでよく見かけるcommit不要なファイルを追記
 - `pyproject.toml`にformat用の設定，コマンドを追加
-
-Makefileは完全好みのため不要であれば削除してください．
 
 ## Reference
 - [Rye](https://rye.astral.sh/)

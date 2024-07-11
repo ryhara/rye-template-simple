@@ -25,47 +25,10 @@ rm -rf ./src
 
 mkdir -p ./src/
 
-# Makefile -------------------------------------------
-
-content=$(cat << EOF
-all:
-	echo "rye setup"
-
-init:
-	rye add --dev ruff
-	rye add pip
-	rye sync
-
-sync:
-	rye sync
-
-lint:
-	rye run lint
-
-format:
-	rye run format
-
-check:
-	rye run check
-
-mypy:
-	rye run lint:mypy
-
-clean:
-	find src/ -name "__pycache__" | xargs rm -rf
-	find . -name ".mypy_cache" | xargs rm -rf
-	find . -name ".ruff_cache" | xargs rm -rf
-
-.PHONY: sync lint clean init all format check mypy
-EOF
-)
-
-echo "$content" > Makefile
-
-echo "Makefile created successfully!"
-
 # rye setup -------------------------------------------
-make init
+rye add --dev ruff
+rye add pip
+rye sync
 
 # .vscode/settings.json -------------------------------------------
 content=$(cat << EOF
